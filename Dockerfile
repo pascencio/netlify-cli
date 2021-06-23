@@ -1,7 +1,7 @@
 FROM debian
 
 RUN apt update -y && \
-    apt install -y curl python2 && \
+    apt install -y curl python2 build-essential && \
     adduser netlify --disabled-password --gecos ""
 
 USER netlify
